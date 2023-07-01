@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style_login.css">
+  <script defer src="validacion_login.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body background="https://img.freepik.com/vector-gratis/fondo-onda-blanca-suave_52683-55288.jpg?w=2000">
+
+
+
+  <div class="container">
+
+      <header>
+            <nav class="navbar navbar-expand-xxl navbar-dark" style="background-color: rgb(255, 255, 255);">
+              <a class="navbar-logo" href="index.html" >
+                <img src="img\LogoNegro.png" class="logo" width="75" height="mr-auto">
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </nav>
+      </header>
+ 
+  </div>
+
+
+
+  <div class="container" >
+        <form id="form" action="/">
+            <h1>Login</h1>
+            <div class="input-control">
+                <label for="username">Usuario</label>
+                <input id="username" name="username" type="text">
+                <div class="error" ></div>
+            </div>
+            <div class="input-control">
+                <label for="password">Contraseña</label>
+                <input id="password"name="password" type="password">
+                <div class="error"></div>
+            </div>
+            <button>Ingresar</button>
+        </form>
+    </div>
+</body>

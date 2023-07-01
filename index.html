@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SmartShop</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body background="https://img.freepik.com/vector-gratis/fondo-onda-blanca-suave_52683-55288.jpg?w=2000">
+
+  
+    <div class="container">
+          <header>
+            <nav class="navbar navbar-expand-xxl navbar-dark" style="background-color: rgba(255, 255, 255, 0.852);">
+              <a class="navbar-logo" href="index.html">
+                <img src="img\LogoNegro.png" class="logo" width="75" height="mr-auto">
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="dropdown">
+                <button class="btn btn-light dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="false" style="font-size: small; font: bold;" >
+                  <div class="col-1"><b>Marcas Destacadas</b></div>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-light">
+                  <li><a class="dropdown-item" >iPhone</a></li>
+                  <li><a class="dropdown-item" >Samsung</a></li>
+                  <li><a class="dropdown-item" >Huawei</a></li>
+                  <li><a class="dropdown-item" >Xiaomi</a></li>
+                </ul>
+              </div>
+
+
+
+                <a type="button" href="ofertas.html" style="color:rgb(255, 0, 51); font-size: small; font: bold;"> <b>Ofertas</b> </a>
+                <a type="button" href="carrito.html" style="color:rgb(0, 0, 0); font-size: small; font: bold;" > <b>Carrito de compras</b> </a>
+
+                  <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                <li class="nav-item dropdown">
+                  <a type="button" class="btn-outline-success dropdown-toggle" href="#" id="navbarDropdown" data-toggle="dropdown" aria-expanded="false">
+                    <img src="img\person-circle.svg" width="32" height="32">
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="iniciarsesion.html"> Iniciar Sesion</a></li>
+                    <li><a class="dropdown-item" href="register.html">Registrarse</a></li>
+                  </ul>
+                </li>
+            </nav>
+          </header>
+     </div>
+
+    <br>
+    <br>
+    <hr style="color:black">
+    <br>
+
+    <div class="container">  
+      <div class="row-inner text-centerw ">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+        
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+
+          <div class="text-center item active" data-interval="2000">
+              <img class ="rounded mx-auto d-block" src="img\samsung.jpg" alt="A series"  width="560px"  >
+              <div class="carousel-caption">
+                <h3 style="color:rgb(35, 112, 201);"><b>NUEVOS SERIES A</b></h3>
+                <p>¡Captura increibles momentos!</p>
+              </div>
+          </div>
+
+            <div class="text-center item" data-interval="2000">
+              <img  class ="rounded mx-auto d-block" src="img\apple.jpg" alt="Apple" width="455px"  >
+              <div class="carousel-caption">
+                <h3 style="color:rgb(255, 255, 255);"><b>iPhone 14 PRO</b></h3>
+                <p><b>¡Mas pro que nunca!</b></p>
+              </div>
+          </div>
+          
+          <div class="text-center item" data-interval="2000">
+              <img class ="rounded mx-auto d-block" src="img\zflip.jpg" alt="zflip"  width="500px"  >
+              <div class="carousel-caption">
+                <h3 style="color:rgb(165, 74, 240);"><b>Z FLIP4</b></h3>
+                <p><b>A la antigua</b></p>
+              </div>
+          </div>
+          </div>
+          
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+    </div>
+    <br>
+    <hr style="color:black">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+          <div class="row-card">
+            <div class="col-sm-4 mb-3 mb-sm-0">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
+
+
+
+

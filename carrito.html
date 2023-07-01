@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de Compras</title>
+  <link rel="stylesheet" href="style_carrito.css">
+</head>
+<body background="https://img.freepik.com/vector-gratis/fondo-onda-blanca-suave_52683-55288.jpg?w=2000">
+
+         <div class="container">
+            <header>
+                <nav class="navbar navbar-expand-xxl navbar-dark" style="background-color: rgb(255, 255, 255);">
+                  <a class="navbar-logo" href="index.html" >
+                    <img src="img\LogoNegro.png" class="logo" width="75" height="mr-auto">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                </nav>
+            </header>
+        </div>
+
+    <div class="container">
+     <form id="form" action="/">
+        <div class="carrito" style="color: rgb(0, 0, 0);">
+        <h1>Carrito de Compras</h1>
+        </div>
+        <form id="cart-form" style="color: rgb(0, 0, 0);">
+            <p><label for="product-name">Nombre del producto:</label></p>
+            <input type="text" id="product-name">
+            <p><label for="product-price">Precio:</label></p>
+            <input type="number" id="product-price">
+            <button type="button" onclick="addToCart()">Agregar al carrito</button>
+        </form>
+
+     </form>
+    </div>
+    <div class="container">
+     <form id="form" action="/">
+        <div class="product-name" style="color: rgb(0, 0, 0);">
+            <h2>Productos en el carrito:</h2>
+        </div>
+        <table id="cart-table" style="color: rgb(0, 0, 0);">
+            <thead>
+            <tr>
+                <th>Nombre del producto</th>
+                <th>Precio</th>
+            </tr>
+            </thead>
+            <tbody id="cart-items">
+            </tbody>
+            <tfoot>
+            <tr>
+                <td>Total:</td>
+                <td id="cart-total">0</td>
+            </tr>
+            </tfoot>
+        </table>
+     </form>
+    </div>
+      <script>
+    
+        function addToCart() {
+          var productName = document.getElementById('product-name').value;
+          var productPrice = parseFloat(document.getElementById('product-price').value);
+          var cartItems = document.getElementById('cart-items');
+          var cartTotal = document.getElementById('cart-total');
+          
+    
+          var newRow = document.createElement('tr');
+          newRow.innerHTML = `<td>${productName}</td><td>${productPrice}</td>`;
+          cartItems.appendChild(newRow);
+          
+    
+          var total = parseFloat(cartTotal.textContent);
+          total += productPrice;
+          cartTotal.textContent = total;
+          
+    
+          document.getElementById('product-name').value = '';
+          document.getElementById('product-price').value = '';
+        }
+      </script>
+</body>
+</html>
